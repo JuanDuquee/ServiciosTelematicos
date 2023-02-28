@@ -1,0 +1,16 @@
+$ORIGIN juandavid.com.
+$TTL 3H
+@       IN SOA  server.juandavid.com. root@juandavid.com. (
+                                        0       ; serial
+                                        1D      ; refresh
+                                        1H      ; retry
+                                        1W      ; expire
+                                        3H )    ; minimum
+@       IN      NS      server.juandavid.com.
+
+;host en la zona
+
+server  IN      A       192.168.50.3
+www     IN      CNAME   server
+cliente IN      A       192.168.50.2
+parcial IN      A       192.168.50.3
